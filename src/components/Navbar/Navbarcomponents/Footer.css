@@ -1,0 +1,26 @@
+.left-footer{
+    text-align: center; 
+    margin-top: 29vh;
+  }
+
+.socials a{
+    padding: 7px;
+    font-size: 18px;
+}
+
+.twitter{
+    color: #d5c455;
+}
+
+.github{
+    color: #d5c455;
+}
+
+.mail{
+    color:#d5c455;
+}
+
+.year{
+    font-size: 12px;
+    color: #00000066;
+}

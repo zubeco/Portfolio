@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color:rgb(32, 32, 28) ;
+    color: rgb(231, 227, 227);
+}
+
+
+
+.left-side{
+    font-family: 'Poppins',Arial, sans-serif;
+    font-size: 23px;
+    margin-left: 80px;
+    font-weight:500;
+    color: rgb(231, 227, 227);
+    text-decoration: none;
+}
+
+.bars{
+    font-size: 20px;
+    margin-right: 80px;
+    cursor: pointer;
+
+}
+
+@media all and (max-width: 980px){
+    .nav-container{
+        background-color: #222222;
+        color: #ffff;
+    }
+
+   
+}
+.nav-links{
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Poppins',Arial, sans-serif;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top:80px;
+    right: 100px;
+    border-radius: 2px;
+    background:  #FFFFFFCC;
+    width: 170px;
+    height: 200px;
+    transform: translateY(0px);
+    transition: .9 ease-in-out;
+}
+
+
+.stay{
+    font-size: 14px;
+    list-style: none;
+    font-family: 'Poppins',Arial, sans-serif;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    border-radius: 2px;
+    background:  #FFFFFFCC;
+    width: 170px;
+    height: 283px;
+    transform: translateY(-500px) ;
+    transition: .9 ease-in-out;
+  
+}
+
+
+
+.nav-links li{
+    color: #000000B3;
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
+@media all and (max-width: 980px){
+    .nav-links{
+        text-align: center;
+        background: #222222;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        transition: 300ms ease-in-out;
+        opacity: ;
+    }
+
+    .nav-links li{
+        color: white;
+    }
+}
+
+@media all and (max-width: 320px){
+    .left-side{
+        font-family: 'Poppins',Arial, sans-serif;
+        font-size: 15px;
+        margin-left: 80px;
+        font-weight:500;
+        color: rgb(231, 227, 227);
+    }
+}

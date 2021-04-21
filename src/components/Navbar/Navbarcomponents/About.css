@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+.about-container{
+    background-color: #eee;
+    height: 100%;
+    width: 100%;
+}
+
+.about-link{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: poppins, Arial, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 20vh;
+}
+
+.spann{ 
+    padding-top: 1px;
+}
+
+.error{
+    color: red;
+    font-family: poppins, Arial, sans-serif;
+    font-size: 10px;
+}
+
+.align1{
+    display: flex;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.align1:hover{
+    color:#D5C455 ;
+    cursor: pointer;
+
+}
+
+.align2{
+    display: flex;
+    cursor:text;
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+.what{
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    font-size: 35px;
+    font-family: poppins, Arial, sans-serif;
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+
+.logo{
+    width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns:40% 60%;
+    margin: 0px 140px 0px 120px;
+    grid-column-gap:2em ;
+    grid-row-gap:5em ;
+    grid-auto-rows: minmax(300px, auto);
+    justify-content: space-around;
+}
+
+.contain{
+    width: 100%;
+    padding-bottom: 70px;
+
+}
+
+.bold{
+    font-family: poppins, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.contain p{
+    font-family: poppins, Arial, sans-serif;
+    font-size: 18px;
+    color: #212529;
+    padding-bottom: 20px;
+}
+
+.shoot{
+    text-decoration: none;
+    color:#D5C455 ;
+}
+
+
+
+@media all and (max-width: 1100px){
+    .about-container{
+        background-color: #eee;
+        width: 100%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contain p{
+        font-family: poppins, Arial, sans-serif;
+        padding-bottom: 15px;
+        font-size: 17px;
+        
+    }
+}
+
+@media all and (max-width: 1090px){
+    .about-container{
+        background-color: #eee;
+        width: 100%;
+    }
+
+    .wrapper{
+        display: block;
+        margin: 0px 30px 0px 30px;
+
+    }
+
+}
+
+
+
+@media all and (max-width: 650px){
+.contain p{
+    font-family: poppins, Arial, sans-serif;
+    font-size: 18px;
+    color: #212529;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.form{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.form h3{
+    padding-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.form p{
+    padding-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+form>div{
+    padding-bottom: 5px;
+}
+
+input{
+    width: 65%;
+    height: 40px;
+    font-family: poppins, Arial, sans-serif;
+    background:#ebe7ce ;
+    border: 1px solid #d5c455;
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 15px;
+    
+}
+
+
+button{
+    height: 50px;
+    width: 65%;
+    background:#D5C455 ;
+    border: 1px solid #d5c455;
+    font-family: poppins, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    color: rgb(48, 47, 47);
+}
+
+@media all and (max-width: 1100px){
+    input{
+        width: 80%;
+    }
+
+    button{
+        width: 80%;
+    }
+}
+
