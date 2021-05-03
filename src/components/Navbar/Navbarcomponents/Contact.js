@@ -11,8 +11,9 @@ import Footer from './Footer';
 
 
 const Contact = () => {
+
     return (
-        <div className='contact-container'>
+        <div className="contact-container">
             <div className="about-link">
                 <Link className='align1' style={{textDecoration: 'none'}} to="/"><li>Home</li><span className='spann'><BiChevronRight /></span></Link>
                 <Link className='align2' style={{textDecoration: 'none'}} to="/contact"><li>Contact</li><span className='spann'><BiChevronRight /></span></Link>

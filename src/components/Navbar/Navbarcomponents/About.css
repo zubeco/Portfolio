@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-
-
 .about-container{
-    background-color: #eee;
-    height: 100%;
-    width: 100%;
+    background: rgb(255, 255, 255);
 }
 
 .about-link{
+    position: relative;
     display: flex;
     list-style: none;
     text-align: center;
@@ -21,6 +18,13 @@
     align-items: center;
     text-transform: uppercase;
     padding-top: 20vh;
+}
+
+.btnn{
+    position: absolute;
+    top: 30px;
+    left: 30;
+    font-size: 40px;
 }
 
 .spann{ 
@@ -39,22 +43,33 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
+.align2{
+    display: flex;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.align11{
+    display: flex;
+    color: rgb(240, 239, 239);
+    padding-right: 20px;
+    
+}
+
 .align1:hover{
     color:#D5C455 ;
     cursor: pointer;
 
 }
-
-.align2{
-    display: flex;
-    cursor:text;
-    color: rgba(0, 0, 0, 0.4);
+.align2:hover{
+    color:#D5C455 ;
+    cursor: pointer;
 
 }
 
+
 .what{
     font-weight: 600;
-    color: rgb(34, 34, 34);
     font-size: 35px;
     font-family: poppins, Arial, sans-serif;
     padding-top: 25px;
@@ -91,7 +106,6 @@
 .contain p{
     font-family: poppins, Arial, sans-serif;
     font-size: 18px;
-    color: #212529;
     padding-bottom: 20px;
 }
 
@@ -104,7 +118,6 @@
 
 @media all and (max-width: 1100px){
     .about-container{
-        background-color: #eee;
         width: 100%;
     }
 
@@ -123,7 +136,6 @@
 
 @media all and (max-width: 1090px){
     .about-container{
-        background-color: #eee;
         width: 100%;
     }
 
@@ -141,7 +153,6 @@
 .contain p{
     font-family: poppins, Arial, sans-serif;
     font-size: 18px;
-    color: #212529;
     padding-bottom: 20px;
     font-size: 17px;
 }

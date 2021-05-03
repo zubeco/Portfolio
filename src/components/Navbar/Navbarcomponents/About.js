@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import { BiChevronRight } from 'react-icons/bi';
+import { BiChevronRight} from 'react-icons/bi';
 import './About.css';
 import logo from '../images/logo.jpg';
 import Form from './Form';

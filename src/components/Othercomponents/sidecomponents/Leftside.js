@@ -1,8 +1,6 @@
 import React from 'react'
 import './Leftside.css';
 import pics1 from '../../Navbar/images/pics1.jpg';
-import pics2 from '../../Navbar/images/pics2.jpg';
-import pics4 from '../../Navbar/images/pics4.jpg';
 import pics6 from '../../Navbar/images/pics6.jpg';
 import logo from '../../Navbar/images/logo.jpg';
 import Slider from "react-slick";

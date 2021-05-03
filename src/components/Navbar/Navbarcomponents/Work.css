@@ -7,11 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 
-
-.work-container{
-    background-color: #eee;
-    height: 100%;
-    width: 100%;
+.works-container{
+    background: rgb(255, 255, 255);
 }
 
 
@@ -28,9 +25,8 @@
 .projects{
     font-family: 'Lexend', sans-serif;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 60px;
     font-size: 25px;
-    color: rgb(66, 64, 64);
 }
 
 .wrapper2{
@@ -47,6 +43,7 @@
 .wrapper2 div{
     background:white;
     border-radius: 12px;
+    margin-top: 50px;
 }
 
 .make{
@@ -58,7 +55,7 @@
     font-family: poppins, Arial, sans-serif;
     font-size: 21px;
     font-weight: 600;
-    color: #7e7852;
+    color: #575442;
 }
 
 

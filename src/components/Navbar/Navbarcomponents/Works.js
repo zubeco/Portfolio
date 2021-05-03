@@ -12,6 +12,7 @@ import Footer from './Footer';
 
 const Works = () => {
 
+
     const works = [
         {
             title: 'Todo(with Hooks)',
@@ -45,7 +46,7 @@ const Works = () => {
 
 
     return (
-        <div className='work-container'>
+        <div className='works-container'>
              <div className="about-link">
                 <Link className='align1' style={{textDecoration: 'none'}} to="/"><li>Home</li><span className='spann'><BiChevronRight /></span></Link>
                 <Link className='align2' style={{textDecoration: 'none'}} to="/works"><li>Works</li><span className='spann'><BiChevronRight /></span></Link>
