@@ -10,43 +10,13 @@
 
 body {
     height: 100%;
-    background: rgb(255,255,255);
+    background: rgb(255,255,254);
     background: radial-gradient(circle, rgba(255,255,255,1) 23%, rgba(222,224,227,1) 50%);
     }
 
 .suaa{
 }
 
-@media all and (max-width: 950px){
-    body {
-        background-image: url('../../Navbar/images/pics6.jpg',);
-        animation: slide 20s infinite;
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        animation-delay: -2s;
-        animation-direction: alternate-reverse;
-        animation-timing-function:ease-in-out;
-        animation-fill-mode:forwards;
-    }
-
-    @keyframes slide {
-        0%{
-            background-image:url('../../Navbar/images/logo.jpg') ;
-        }
-        30%{
-            background-image: url('../../Navbar/images/pics1.jpg') ;
-        }
-        100%{
-            background-image: url('../../Navbar/images/pics6.jpg');
-        }
-
-    }
-
-    .suaa{
-        display: block;
-    }
-}
 
 .left{
     margin-top: 0px;
