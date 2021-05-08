@@ -9,6 +9,7 @@ import Home from './components/Home';
 
 const App = () => {
   const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false)
 
   
   return (
