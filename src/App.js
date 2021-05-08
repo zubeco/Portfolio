@@ -12,8 +12,8 @@ import './App.css';
 
 const App = () => {
   const [toggle, setToggle] = useState(false)
-  
-  
+
+
   return (
     <Router>
             <div className='control'>
