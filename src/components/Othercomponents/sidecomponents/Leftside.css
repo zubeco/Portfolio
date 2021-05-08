@@ -10,7 +10,7 @@
 
 body {
     height: 100%;
-    background: rgb(255,255,255);
+    background: rgb(255,255,254);
     background: radial-gradient(circle, rgba(255,255,255,1) 23%, rgba(222,224,227,1) 50%);
     }
 
