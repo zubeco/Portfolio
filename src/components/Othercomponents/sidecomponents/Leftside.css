@@ -11,8 +11,7 @@
 body {
     height: 100%;
     background: rgb(255,255,255);
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 44%, rgba(241,225,15,1) 100%, rgba(143,143,112,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 23%, rgba(222,224,227,1) 50%);
     }
 
 .suaa{
