@@ -32,7 +32,7 @@ input{
     box-shadow: none;
     padding-left: 10px;
     font-size: 15px;
-    
+
 }
 
 
@@ -45,6 +45,26 @@ button{
     font-weight: bolder;
     font-size: 17px;
     color: rgb(48, 47, 47);
+    cursor: pointer;
+}
+
+.disabled-button {
+    cursor: not-allowed;
+    background: #c3c3c3;
+}
+
+.success-message {
+    font-size: 17px;
+    color: green;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.error-message {
+    font-size: 17px;
+    color: red;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 @media all and (max-width: 1100px){
