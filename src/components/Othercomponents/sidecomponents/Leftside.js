@@ -13,7 +13,7 @@ const Leftside = () => {
                         <h3>Front-end <span>Developer</span></h3>
                         <h1>I'm Princewill Udeh</h1>
                         <div className="links">
-                            <a className='my-info' href="/about">more about me</a>
+                            <a className='my-info'  href="/about">more about me</a>
                             <a className='hire' href="mailto: princezubby2020@gmail.com">hire me</a>
                         </div>
                     </div>
