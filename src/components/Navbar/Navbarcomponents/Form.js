@@ -1,51 +1,104 @@
-import React,{useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+
 import './Form.css';
 
 
-const Form = () => {
+const Form = ({status, message, onValidated}) => {
     const [inputField , setInputField] = useState({
         first: '',
-        gmail: ''
+        email: ''
     })
 
+    const {first, email} = inputField;
 
-    const {first, gmail} = inputField;
+    const handleFinalSubmit = (e) => {
+        e.preventDefault();
+        email &&
+        first &&
+        email.indexOf("@") > -1 &&
+        onValidated({
+            EMAIL: email,
+            FNAME: first
+        });
+    }
 
     const inputsHandler = (e) =>{
         setInputField( { ...inputField, [e.target.name]: e.target.value })
     }
 
-    const handleFinalSubmit = e => {
-        e.preventDefault(); 
-        console.log(inputField);
-      };
+    useEffect(() => {
+        if(status === 'success') {
+            setInputField({
+                first: '',
+                email: ''
+            })
+        }
+    }, [status])
+
     return (
         <>
                     <div className="form">
                     <h3>Subscribe to receive updates on new posts</h3>
                     <p>Both fields are required.</p>
+                    {status === "success" && (
+                        <div
+                            className={'success-message'}
+                            dangerouslySetInnerHTML={{ __html: message }}
+                        />
+                    )}
+                    {status === "error" && (
+                        <div
+                            className={'error-message'}
+                            dangerouslySetInnerHTML={{ __html: message }}
+                        />
+                    )}
                     <form onSubmit={handleFinalSubmit} >
                         <div>
                             <input id='email'
-                                    placeholder='Email' 
-                                    name='gmail'
-                                    value={gmail}
-                                    type="email" 
+                                    placeholder='Email'
+                                    name='email'
+                                    value={email}
+                                    type="email"
                                     onChange={inputsHandler}/>
                         </div>
                         <div>
-                            <input id='text' 
-                                   type="text" 
+                            <input id='text'
+                                   type="text"
                                    name='first'
                                    value={first}
                                    placeholder='First Name'
                                    onChange={inputsHandler} />
                         </div>
-                        <button  type='submit'>Subscribe</button>
+                        {
+                            (status === 'sending' || !email.length || !first.length) ? (
+                                <button className={'disabled-button'} type='submit' disabled>Subscribe</button>
+
+                            ) : (
+                                <button type='submit'>Subscribe</button>
+                            )
+                        }
                     </form>
                 </div>
         </>
     )
 }
 
-export default Form
+const SubscribeForm = () => {
+    const url = "https://gmail.us1.list-manage.com/subscribe/post?u=c096446ceeeb13158cbec78e7&amp;id=51ada424b8";
+
+    return (
+        <MailchimpSubscribe
+            url={url}
+            render={({ subscribe, status, message }) => (
+                <Form
+                    status={status}
+                    message={message}
+                    onValidated={formData => subscribe(formData)}
+                />
+            )}
+        />
+    )
+}
+
+export default SubscribeForm
