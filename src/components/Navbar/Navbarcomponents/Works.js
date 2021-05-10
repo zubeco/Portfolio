@@ -1,16 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Work.css';
 import {Link} from 'react-router-dom';
 import { BiChevronRight } from 'react-icons/bi';
 import { FaGithub,FaChrome} from 'react-icons/fa';
 import Form from './Form';
 import Footer from './Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
     
 
 
 
 
 const Works = () => {
+    useEffect(() => {
+        Aos.init ({duration: 1000});
+    }, [])
 
 
     const works = [
@@ -56,8 +61,8 @@ const Works = () => {
                 {
                     works.map(work => {
                         return (
-                            <div>
-                                <div className="make">
+                            <div data-aos="fade-up">
+                                <div className="make" >
                                     <h2>{work.title}</h2>
                                     <p>{work.description}</p>
                                     <h5>{work.skills}</h5>

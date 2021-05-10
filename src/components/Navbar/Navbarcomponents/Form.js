@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import './Form.css';
 
@@ -9,6 +11,10 @@ const Form = ({status, message, onValidated}) => {
         first: '',
         email: ''
     })
+
+    useEffect(() => {
+        Aos.init ({duration: 1000});
+    }, [])
 
     const {first, email} = inputField;
 
@@ -38,7 +44,7 @@ const Form = ({status, message, onValidated}) => {
 
     return (
         <>
-                    <div className="form">
+                    <div className="form" data-aos="fade-up">
                     <h3>Subscribe to receive updates on new posts</h3>
                     <p>Both fields are required.</p>
                     {status === "success" && (

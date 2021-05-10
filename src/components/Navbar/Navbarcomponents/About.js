@@ -1,15 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import { BiChevronRight} from 'react-icons/bi';
 import './About.css';
 import logo from '../images/logo.jpg';
 import Form from './Form';
 import Footer from './Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const About = () => {
+    useEffect(() => {
+        Aos.init ({duration: 1000});
+    }, [])
+
+
     return (
         <div className='about-container'>
             <div className="about-link">
@@ -19,8 +26,8 @@ const About = () => {
             <h1 className='what'>About me</h1>
             <div className="wrapper">
                 <img className='logo' src={logo} alt=""/>
-                <div className="contain">
-                    <p>Hello! My name is <span className='bold'>Udeh Princewill Nzubechukwu</span></p>
+                <div className="contain" data-aos="fade-up">
+                    <p>Hello! My name is <span className='bold' data-aos="fade-up">Udeh Princewill Nzubechukwu</span></p>
                     <p>A Nigerian-based Front-end web developer. During the few months i have been coding, I have picked up relevant languages, skills and frameworks - HTML, CSS, Vanilla Javascript, React JS and currently learning Vue JS. I have adequate knowledge of Git. </p>
                     <p>I try to build cool web Apps to keep my skillset. I consider the internet the greatest learning environment, and solving problems the best teacher.</p>
                     <p>When I'm not coding , I'm either playing video game,On social media or reading to gain more knowledge.</p>
