@@ -27,15 +27,15 @@ const About = () => {
             <div className="wrapper">
                 <img className='logo' src={logo} alt=""/>
                 <div className="contain" data-aos="fade-up">
-                    <p>Hello! My name is <span className='bold' data-aos="fade-up">Udeh Princewill Nzubechukwu</span></p>
+                    <p>Hello! My name is <span className='bold' >Udeh Princewill Nzubechukwu</span></p>
                     <p>A Nigerian-based Front-end web developer. During the few months i have been coding, I have picked up relevant languages, skills and frameworks - HTML, CSS, Vanilla Javascript, React JS and currently learning Vue JS. I have adequate knowledge of Git. </p>
                     <p>I try to build cool web Apps to keep my skillset. I consider the internet the greatest learning environment, and solving problems the best teacher.</p>
                     <p>When I'm not coding , I'm either playing video game,On social media or reading to gain more knowledge.</p>
                     <p>If you wish to reach through a pretty form, I am sorry to disappoint you as there is none. <a className='shoot' href="mailto: princezubby2020@gmail.com">Just shoot me a Mail</a>- it makes both our lives easier.</p>
                     <p className='bold'>Cheers!</p>
                 </div>
-                <Form/>
             </div>
+            <Form/>
             <Footer />
         </div>
     )
